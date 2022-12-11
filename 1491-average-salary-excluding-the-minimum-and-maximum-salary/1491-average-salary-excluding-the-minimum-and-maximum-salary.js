@@ -8,8 +8,7 @@ const arrSum = (salary) => {
 var average = function(salary) {
     const max = Math.max(...salary);
     const min = Math.min(...salary);
-    const length = salary.length -2;
+    const length = salary.length - 2;
     const excludedSalary = arrSum(salary) - (max + min)
-    
     return excludedSalary/length;
 };
