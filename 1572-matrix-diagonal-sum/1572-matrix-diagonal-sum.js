@@ -5,15 +5,13 @@
 var diagonalSum = function(mat) {
     
     let sum = 0
-    let left = 0
     let right = mat.length - 1
     for(let i=0;i<mat.length;i++){
-        if((i + left) === (i + right)){
-            sum += mat[i][left]
+        if((i + i) === (i + right)){
+            sum += mat[i][i]
         }else{
-         sum += mat[i][left] + mat[i][right]   
+         sum += mat[i][i] + mat[i][right]   
         }
-        left++;
         right--;
     }
     return sum
