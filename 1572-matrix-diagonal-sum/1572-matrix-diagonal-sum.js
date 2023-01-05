@@ -8,7 +8,6 @@ var diagonalSum = function(mat) {
     let left = 0
     let right = mat.length - 1
     for(let i=0;i<mat.length;i++){
-        console.log("letf",i,left,"right",i,right)
         if((i + left) === (i + right)){
             sum += mat[i][left]
         }else{
