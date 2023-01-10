@@ -12,6 +12,5 @@ var mergeAlternately = function(word1, word2) {
         result.push(wordSplit2[i])
     }
     const rem = wordSplit2.slice(wordSplit.length,wordSplit2.length).join("")
-    console.log(rem)
     return result.join('') + rem
 };
