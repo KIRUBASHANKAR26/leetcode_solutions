@@ -14,13 +14,9 @@ var isAlienSorted = function(words, order) {
             if(comp2<comp1){
                return false
             }
-           
             if(comp1<comp2){
-                 console.log(j,a[j],b[j],a,b) 
                 j = max
-               
             }
-            
         }
     }
         return true
