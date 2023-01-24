@@ -15,12 +15,8 @@ var sumOfLeftLeaves = function(root,isLeft) {
     if(!root){
         return 0
     }
-
     if(root.val && isLeft && !root.left && !root.right){
-             console.log(root.val)
         result = root.val 
     }
-    
-    return result + sumOfLeftLeaves(root.left,true) + sumOfLeftLeaves(root.right,false);
-    
-};
+    return result + sumOfLeftLeaves(root.left,true) + sumOfLeftLeaves(root.right,false);   
+}
