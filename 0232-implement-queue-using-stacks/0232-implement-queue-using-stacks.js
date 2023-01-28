@@ -15,11 +15,6 @@ class MyQueue {
         return this.popStack.pop()
     }
     peek(){
-        // if(this.pushStack.length > 0){
-        //     while(this.pushStack.length){
-        //         this.popStack.push(this.pushStack.pop())
-        //     }
-        // }
          if(!this.popStack.length){
             while(this.pushStack.length){
                 this.popStack.push(this.pushStack.pop())
